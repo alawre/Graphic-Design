@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+}
+/* --------- HEADER ---------- */
+
+header {
+  border: 0px solid white;
+  padding: 10px;
+  color: black;
+}
+
+.logo {
+  width: 10rem;
+  float: left;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  color: black;
+}
+
+.topnav #about {
+  margin-top: 80px;
+}
+
+.topnav #contact {
+  margin-top: -60px;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: #ff4154;
+  padding: 40px 30px;
+  text-decoration: none;
+  text-align: right;
+  font-size: 25px;
+  display: block;
+  font-size: 18px;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  font-size: 25px;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: white;
+  color: white;
+}
+
+/* ------- SLIDER ------- */
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.left-slide > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.left-slide h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.left-slide p {
+  font-size: 20px;
+}
+.right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+button:hover {
+  color: #ff4154;
+}
+button:focus {
+  outline: none;
+}
+.action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+.action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* --------- FOOTER ---------- */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  color: #aaa;
+}
+
+#footer-right {
+  display: flex;
+  width: 80vw;
+  padding-right: 20px;
+  padding-left: 73%;
+}
+
+#footer-right i {
+  color: #ff4154;
+  font-size: 30px;
+  cursor: pointer;
+  float: right;
+  margin: 10px;
+  align-content: flex-end;
+}
+
+#footer-left {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  padding-right: 20px;
+  font-size: 11pt;
+}
